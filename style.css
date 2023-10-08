@@ -1,0 +1,1035 @@
+/*Default Code Start Here*/
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*border:1px solid #ff0000;  */
+}
+
+html {
+  font-size: 62.5;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f8fafc;
+  font-family: 'Figtree', sans-serif;
+}
+
+.align {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 3rem;
+}
+
+/* Website Start Here */
+
+header {
+  background-color: #ffffff;
+  width: 100%;
+  height: 8vh;
+}
+
+.navContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.navBar {
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px;
+
+}
+
+.navBar h1 {
+  color: #000000;
+  font-size: 20px;
+  margin-left: 34px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin-top: 4px;
+}
+
+form {
+  width: 65%;
+  height: auto;
+  margin-top: 50px;
+  margin-left: 77px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.formContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.formContainer h1 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 20px;
+  margin-left: 50px;
+  padding-top: 25px;
+  padding-bottom: 5px;
+
+}
+
+button {
+  background-color: #a4a9b0;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  margin-left: 45px;
+  padding: 8px 15px 6px;
+  margin-bottom: 10px;
+  font-family: 'Figtree', sans-serif;
+  cursor: pointer;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 620px;
+  margin-top: -555px;
+  position: relative;
+  top: 554px;
+}
+
+.invoiceContainer {
+  background-color: #ffffff;
+  width: 45%;
+  height: auto;
+  border-radius: 5px;
+  /* margin-left: 25px; */
+  position: relative;
+  bottom: 1176px;
+  color: #000000;
+  left: 360px;
+}
+
+.billText h2 {
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-size: 18px;
+  margin-left: 45px;
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+.billText2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.billText2 h2 {
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-size: 18px;
+  margin-left: 45px;
+  padding-top: 25px;
+  padding-bottom: 5px;
+  margin-right: 330px;
+  margin-top: -53px;
+}
+
+.companyText h2 {
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-size: 15px;
+  margin-left: 45px;
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+.company {
+  margin-left: 45px;
+}
+
+.company input[type="text"] {
+  width: 26%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#companyInput {
+  margin-left: 69px
+}
+
+.company2Text h2 {
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-size: 15px;
+  margin-left: 45px;
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+
+.company2 {
+  margin-left: 500px;
+  position: relative;
+  bottom: 42px;
+}
+
+.company2 input[type="text"] {
+  width: 58%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#company2Input {
+  margin-left: 69px
+}
+
+.address {
+  margin-left: 45px;
+  position: relative;
+  bottom: 35px;
+}
+
+.address input[type="text"] {
+  width: 26%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#addressInput {
+  margin-left: 79px;
+}
+
+.address2 {
+  margin-left: 500px;
+  position: relative;
+  bottom: 77px;
+}
+
+.address2 input[type="text"] {
+  width: 58%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#address2Input {
+  margin-left: 79px;
+}
+
+.zip {
+  margin-left: 45px;
+  position: relative;
+  bottom: 65px;
+}
+
+.zip input[type="number"] {
+  width: 26%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#zipInput {
+  margin-left: 77px;
+}
+
+.zip2 {
+  margin-left: 500px;
+  position: relative;
+  bottom: 105px;
+}
+
+.zip2 input[type="number"] {
+  width: 58%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#zip2Input {
+  margin-left: 77px;
+}
+
+.city {
+  margin-left: 45px;
+  position: relative;
+  bottom: 98px;
+}
+
+.city input[type="text"] {
+  width: 26%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#cityInput {
+  margin-left: 106px;
+}
+
+.city2 {
+  margin-left: 500px;
+  position: relative;
+  bottom: 140px;
+}
+
+.city2 input[type="text"] {
+  width: 58%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#city2Input {
+  margin-left: 106px;
+}
+
+.country {
+  margin-left: 45px;
+  position: relative;
+  bottom: 125px;
+}
+
+.country input[type="text"] {
+  width: 26%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#countryInput {
+  margin-left: 76px;
+}
+
+.country2 {
+  margin-left: 500px;
+  position: relative;
+  bottom: 170px;
+}
+
+.country2 input[type="text"] {
+  width: 58%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#country2Input {
+  margin-left: 76px;
+}
+
+.customField {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: -135px;
+  position: relative;
+  bottom: 157px;
+}
+
+.customField h2 {
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-size: 18px;
+  margin-left: 45px;
+  position: relative;
+}
+
+h2 a {
+  color: #000000;
+}
+
+.invoice {
+  margin-left: 45px;
+}
+
+.invoice input[type="number"] {
+  width: 26%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#invoiceInput {
+  margin-left: 20px;
+}
+
+.issueDate {
+  margin-left: 45px;
+}
+
+.issueDate input[type="date"] {
+  width: 26%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#issuedateInput {
+  margin-left: 59px;
+}
+
+.dueDate {
+  margin-left: 45px;
+}
+
+.dueDate input[type="date"] {
+  width: 26%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#duedateInput {
+  margin-left: 68px;
+}
+
+.descriptionField {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.descriptionField h2 {
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-size: 18px;
+  margin-left: 75px;
+  position: relative;
+}
+
+.descriptionField .total {
+  position: relative;
+}
+
+.descriptionField .total h2 {
+  position: absolute;
+  left: -260px;
+}
+
+.descriptionField .rate {
+  position: relative;
+}
+
+.descriptionField .rate h2 {
+  position: absolute;
+  left: -165px;
+}
+
+.sampleText {
+  margin-left: 45px;
+}
+
+.sampleText input[type="text"] {
+  width: 160%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#sampleTextInput {
+  margin-left: 21px;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sampleText2 {
+  margin-left: 45px;
+  position: absolute;
+}
+
+.sampleText2 input[type="text"] {
+  width: 25%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#sampleText2Input {
+  margin-left: 363px;
+}
+
+.sampleText3 {
+  margin-left: 190px;
+  position: absolute;
+}
+
+.sampleText3 input[type="text"] {
+  width: 18%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#sampleText3Input {
+  margin-left: 363px;
+}
+
+.sampleText4 {
+  margin-left: 300px;
+  position: absolute;
+}
+
+.sampleText4 input[type="text"] {
+  width: 30%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#sampleText4Input {
+  margin-left: 363px;
+}
+
+.addmore {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #3730a3;
+  position: relative;
+  right: 10px;
+}
+
+.addmore i {
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  margin-left: 6px;
+}
+
+.notesText {
+  margin-left: 65px;
+  /* position: absolute; */
+}
+
+.notesText input[type="text"] {
+  width: 41%;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#notesTextIput {
+  margin-left: 363px;
+}
+
+hr {
+  width: 90%;
+  margin-left: 30px;
+  color: #C70039;
+}
+
+.notesField {
+  display: flex;
+}
+
+.notesField h2 {
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-size: 18px;
+  margin-left: 68px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.notesText1 {
+  margin-left: 65px;
+  /* position: absolute; */
+}
+
+.notesText1 input[type="text"] {
+  width: 55%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#notesText1Iput {
+  margin-left: 363px;
+}
+
+.notesText2 {
+  margin-left: 65px;
+  /* position: absolute; */
+}
+
+.notesText2 input[type="text"] {
+  width: 55%;
+  padding: 23px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+#notesText2Iput {
+  margin-left: 363px;
+}
+
+.notefieldContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.notefieldContainer i {
+  position: relative;
+  top: -37px;
+}
+
+.toggle1 {
+  position: relative;
+  margin-left: 10px;
+}
+
+.toggle1 i {
+  position: absolute;
+  left: 490px;
+  font-size: 30px;
+}
+
+.toggle2 {
+  position: relative;
+  margin-left: 10px;
+}
+
+.toggle2 i {
+  position: absolute;
+  left: 265px;
+  font-size: 30px;
+}
+
+.toggle3 {
+  position: relative;
+}
+
+.toggle3 i {
+  position: absolute;
+  left: 58px;
+  font-size: 30px;
+}
+
+.discount {
+  position: absolute;
+  left: 706px;
+}
+
+.discount h2 {
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.tax {
+  position: absolute;
+  left: 796px;
+}
+
+.tax h2 {
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.shipping {
+  position: absolute;
+  left: 855px;
+}
+
+.shipping h2 {
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.subtotal {
+  position: absolute;
+  left: 705px;
+}
+
+.subtotal h2 {
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.inr {
+  position: absolute;
+  left: 850px;
+}
+
+.inr h2 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.hr hr {
+  margin-top: 34px;
+  width: 365%;
+  margin-left: -160px;
+}
+
+.totalamount {
+  position: absolute;
+  left: -156px;
+  top: 70px;
+}
+
+.totalamount h2 {
+  text-transform: capitalize;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.inr10 {
+  position: absolute;
+  left: -1px;
+  top: 70px;
+}
+
+.inr10 h2 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.footerContainer {
+  width: 92%;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 5px;
+  margin-left: 25px;
+  display: flex;
+}
+
+.footerText1 {
+  /* background-color: red; */
+  width: 50%;
+  color: #000000;
+  margin: 20px auto 0;
+  align-items: center;
+}
+
+p {
+  text-align: justify;
+}
+
+.copyrightContainer {
+  background-color: #ffffff;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.copyrightText {
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+
+}
+
+.copyrightText h1 {
+  color: #000000;
+  font-size: 20px;
+  margin-left: 34px;
+  /* text-transform: uppercase; */
+  font-weight: lighter;
+  margin-top: 4px;
+}
+
+.copyrightText h2 {
+  color: #9d9d9d;
+  font-size: 13px;
+  margin-left: 11px;
+  /* text-transform: uppercase; */
+  font-weight: lighter;
+  margin-top: 9px;
+}
+
+.ulsocialMedia {
+  /* margin-left: 350px; */
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  position: relative;
+  bottom: 35px;
+  font-size: 25px;
+  right: 135px;
+  color: #afafaf;
+}
+
+
+.ulsocialMedia li {
+  margin-right: 16px;
+}
+
+.invoiceText {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 114%;
+}
+
+.new-invoice-button {
+  background-color: #ffffff;
+  color: #000000;
+  width: 95%;
+  position: relative;
+  top: 4px;
+  /* left: 8px; */
+  right: 53px;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+.fa-brands.fa-plus {
+  position: relative;
+  left: 83px;
+  top: 21px;
+}
+
+.saveInvoice {
+  width: 100%;
+}
+
+.save-invoice-button {
+  background-color: #ea580c;
+  color: #fff;
+  width: 95%;
+  position: relative;
+  top: 4px;
+  /* left: 8px; */
+  right: 38px;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.fa-solid.fa-file-arrow-down {
+  position: relative;
+  left: 85px;
+  bottom: 39px;
+  color: #fff;
+}
+
+.generateInvoice {
+  width: 100%;
+}
+
+.generate-invoice-button {
+  background-color: #312e81;
+  color: #fff;
+  width: 95%;
+  position: relative;
+  /* top: 4px; */
+  /* left: 8px; */
+  bottom: 17px;
+  right: 38px;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.fa-solid.fa-file-invoice {
+  position: relative;
+  left: 45px;
+  bottom: 59px;
+  color: #fff;
+}
+
+.export {
+  display: flex;
+  flex-direction: row;
+  width: 116%;
+}
+
+.export-invoice-button {
+  background-color: #312e81;
+  color: #fff;
+  width: 95%;
+  position: relative;
+  /* top: 4px; */
+  /* left: 8px; */
+  bottom: 42px;
+  right: 38px;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.import-invoice-button {
+  background-color: #312e81;
+  color: #fff;
+  width: 95%;
+  position: relative;
+  /* top: 4px; */
+  /* left: 8px; */
+  bottom: 42px;
+  right: 62px;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.missingInvoice {
+  width: 100%;
+}
+
+.missing-invoice-button {
+  background-color: #ffffff;
+  color: #000000;
+  width: 95%;
+  position: relative;
+  /* top: 4px; */
+  /* left: 8px; */
+  right: 38px;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  bottom: 44px;
+}
+
+.fa-regular.fa-circle-dot.fa-beat {
+  position: relative;
+  left: 65px;
+  bottom: 87px;
+  color: #0ea5e9;
+}
+
+
+.currencyText {
+  position: relative;
+  bottom: 60px;
+  left: 10px;
+}
+
+.currencyText h2 {
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.currency-Text {
+  /* margin-left: 45px; */
+  position: relative;
+  bottom: 55px;
+}
+
+.currency-Text input[type="text"] {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f8f8f9;
+}
+
+#currency-TextInput {
+  margin-left: 10px;
+}
+
+.langText {
+  position: relative;
+  bottom: 60px;
+  left: 10px;
+}
+
+.langText h2 {
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+.lan-Text {
+  /* margin-left: 45px; */
+  position: relative;
+  bottom: 55px;
+}
+
+.lan-Text input[type="text"] {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f8f8f9;
+}
+
+#lan-TextInput {
+  margin-left: 10px;
+}
+
+.lan-Text hr {
+  color: #e5e7eb;
+  border: 1px solid #f8f8f9;
+  margin-left: 15px;
+  position: relative;
+  top: 5px;
+  width: 93%;
+}
+
+.savedInvoice h2 {
+  font-weight: lighter;
+  font-size: 18px;
+  position: relative;
+  bottom: 58px;
+  left: 10px;
+}
+
+.saved-invoice-button {
+  background-color: #ffffff;
+  color: #000000;
+  width: 95%;
+  position: relative;
+  /* top: 4px; */
+  /* left: 8px; */
+  bottom: 50px;
+  right: 38px;
+  padding: 12px;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}

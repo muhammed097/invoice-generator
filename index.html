@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="navContainer">
+            <nav class="navBar">
+                <h1>Invoice generator</h1>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form>
+            <div class="formContainer">
+                <div class="formText">
+                    <h1>Invoice</h1>
+                </div>
+            </div>
+            <div class="logoUpload">
+                <input type="file" id="file-input" accept="image/*" hidden />
+                <button type="button" onclick="document.getElementById('file-input').click();">Logo - Click To
+                    <br>Upload</button>
+            </div>
+            <div class="billContainer">
+                <div class="billText">
+                    <h2>Bill From</h2>
+                </div>
+
+                <div class="billText2">
+                    <h2>Bill To</h2>
+                </div>
+            </div>
+            <div class="company">
+                <label for="textInput">Company:</label>
+                <input type="text" id="companyInput" name="userText" placeholder="eg:Kwalee" required>
+            </div>
+            <div class="company2">
+                <label for="textInput">Company:</label>
+                <input type="text" id="company2Input" name="userText" placeholder="eg:Kwalee" required>
+            </div>
+            <div class="address">
+                <label for="textInput">Address:</label>
+                <input type="text" id="addressInput" name="userText" placeholder="eg:Main Road" required>
+            </div>
+            <div class="address2">
+                <label for="textInput">Address:</label>
+                <input type="text" id="address2Input" name="userText" placeholder="eg:Main Road" required>
+            </div>
+            <div class="zip">
+                <label for="numberInput">Zipcode:</label>
+                <input type="number" id="zipInput" name="userText" placeholder="eg:6000001" required>
+            </div>
+            <div class="zip2">
+                <label for="numberInput">Zipcode:</label>
+                <input type="number" id="zip2Input" name="userText" placeholder="eg:6000001" required>
+            </div>
+            <div class="city">
+                <label for="textInput">City:</label>
+                <input type="text" id="cityInput" name="userText" placeholder="eg:Thanjavur" required>
+            </div>
+            <div class="city2">
+                <label for="textInput">City:</label>
+                <input type="text" id="city2Input" name="userText" placeholder="eg:Thanjavur" required>
+            </div>
+            <div class="country">
+                <label for="textInput">Country:</label>
+                <input type="text" id="countryInput" name="userText" placeholder="eg:India" required>
+            </div>
+            <div class="country2">
+                <label for="textInput">Country:</label>
+                <input type="text" id="country2Input" name="userText" placeholder="eg:India" required>
+            </div><br>
+
+            <div class="customField">
+                <h2>Custom Fields</h2>
+                <h2><a href="google.com">Add Custom Field</a></h2>
+            </div><br>
+
+            <div class="invoice">
+                <label for="numberInput">Invoice Number:</label>
+                <input type="number" id="invoiceInput" name="userText" placeholder="eg:Invoice number" required>
+            </div>
+            <div class="issueDate">
+                <label for="issuedate">Issue Date:</label>
+                <input type="date" id="issuedateInput" name="date" placeholder="eg: Invoice date" required>
+            </div>
+            <div class="dueDate">
+                <label for="duedate">Due Date:</label>
+                <input type="date" id="duedateInput" name="date" placeholder="eg: Due date" required>
+            </div><br>
+
+            <div class="descriptionField">
+                <div class="item">
+                    <h2>Item Name</h2>
+                </div>
+                <div class="qty">
+                    <h2>Qty</h2>
+                </div>
+                <div class="rate">
+                    <h2>Rate</h2>
+                </div>
+                <div class="total">
+                    <h2>Line Total</h2>
+                </div>
+            </div><br>
+            <div class="descriptionContainer">
+                <div class="sampleText">
+                    <label for="textInput"></label>
+                    <input type="text" id="sampleTextInput" name="userText" placeholder="Product Description" required>
+                </div>
+                <div class="sampleText2">
+                    <label for="textInput"></label>
+                    <input type="text" id="sampleText2Input" name="userText" placeholder="Qty" required>
+                </div>
+                <div class="sampleText3">
+                    <label for="textInput"></label>
+                    <input type="text" id="sampleText3Input" name="userText" placeholder="INR" required>
+                </div>
+                <div class="sampleText4">
+                    <label for="textInput"></label>
+                    <input type="text" id="sampleText4Input" name="userText" placeholder="INR" required>
+                </div>
+                <div class="addmore">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+            <div class="notesText">
+                <label for="textInput"></label>
+                <input type="text" id="notesTextInput" name="userText" placeholder="" required>
+            </div>
+            <br>
+            <hr>
+            <div class="notesField">
+                <h2>Notes</h2>
+            </div><br>
+            <div class="notefieldContainer">
+                <div class="toggle1"><i class="fa-solid fa-toggle-on"></i></div>
+                <div class="toggle2"><i class="fa-solid fa-toggle-off"></i></div>
+                <div class="toggle3"><i class="fa-solid fa-toggle-on"></i></div>
+            </div>
+            <div class="discount">
+                <h2>Discount</h2>
+            </div>
+            <div class="tax">
+                <h2>Tax</h2>
+            </div>
+            <div class="shipping">
+                <h2>Shipping</h2>
+            </div>
+            <div class="notesText1">
+                <label for="textInput"></label>
+                <input type="text" id="notesText1Input" name="userText" placeholder="" required>
+            </div><br>
+            <div class="subtotal">
+                <h2>Sub total</h2>
+            </div>
+            <div class="inr">
+                <h2>INR 10.00</h2>
+                <div class="hr">
+                    <hr>
+                </div>
+                <div class="totalamount">
+                    <h2>Total Amount</h2>
+                </div>
+                <div class="inr10">
+                    <h2>INR 10.00</h2>
+                </div>
+            </div>
+            <div class="notesField">
+                <h2>Terms</h2>
+            </div><br>
+            <div class="notesText2">
+                <label for="textInput"></label>
+                <input type="text" id="notesText2Input" name="userText" placeholder="" required>
+            </div>
+
+        </form>
+        <div class="flex-container">
+            <div class="invoiceContainer">
+                <div class="invoiceText">
+                    <button class="new-invoice-button">New Invoice</button>
+                    <i class="fa-brands fa-plus"></i>
+                </div>
+                <div class="saveInvoice">
+                    <button class="save-invoice-button">Save Invoice</button>
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                </div>
+                <div class="generateInvoice">
+                    <button class="generate-invoice-button">Generate PDF Invoice</button>
+                    <i class="fa-solid fa-file-invoice"></i>
+                </div>
+                <div class="export">
+                    <button class="export-invoice-button">Export</button>
+                    <button class="import-invoice-button">Import</button>
+                </div>
+                <div class="missingInvoice">
+                    <button class="missing-invoice-button">Missing Feature?</button>
+                    <i class="fa-regular fa-circle-dot fa-beat"></i>
+                </div>
+                <div class="currencyText">
+                    <h2>Currency</h2>
+                </div>
+                <div class="currency-Text">
+                    <label for="textInput"></label>
+                    <input type="text" id="currency-TextInput" name="userText" placeholder="INR" required>
+                </div><br>
+                <div class="langText">
+                    <h2>Language</h2>
+                </div>
+                <div class="lan-Text">
+                    <label for="textInput"></label>
+                    <input type="text" id="lan-TextInput" name="userText" placeholder="Language" required>
+                    <hr>
+                </div><br>
+                <div class="savedInvoice">
+                    <h2>Saved Invoice</h2>
+                    <button class="saved-invoice-button">No Saved Invoice Found</button>
+                </div>
+                
+                
+            </div>
+        </div>
+    </main>
+    <div class="footerContainer">
+        <div class="footerText1">
+            <p>You want to run your business running smoothly, right? Then you must keep your bills updated. A free
+                invoice generator can be helpful in this situation.</p><br>
+            <p>
+                This invoice generator is free and privacy-based. Here are the features offered to you:
+            </p><br>
+            <h4>Define Sender and Recipient:</h4><br>
+            <p>The invoice generator allows users to input their information as the sender and recipient effortlessly.
+                All crucial fields are included: Name, Address, City, and Country. If you need additional information
+                like VAT number, email, etc., you can use custom fields for this.</p><br>
+            <h4>Invoice Date and Due Date:</h4><br>
+            <p>Users can set the invoice and due dates, ensuring clarity and timeliness in payment expectations. This
+                function helps with better money management and makes it less likely that payments will be late
+                (hopefully :)).</p><br>
+
+            <h4>Local Storage and Privacy:</h4><br>
+            <p>Data privacy is paramount, and this invoice generator addresses this concern by saving the data in local
+                storage. Users can confidently create and manage invoices, knowing their information is kept secure.</p>
+            <br>
+
+            <h4>PDF Invoice Generation:</h4><br>
+            <p>The tool offers the ability to generate professional-looking PDF invoices. I'm currently working on
+                additional templates for PDFs with different layouts.</p>
+            <br>
+
+            <h4>Import and Export Support:</h4><br>
+            <p>The tool supports importing and exporting invoices in a simple text file format, making it convenient to
+                transfer invoice data across platforms or keep backups of essential records.</p>
+            <br>
+
+            <h4>Custom Fields and Notes:</h4><br>
+            <p>Users can include custom fields like VAT, bank information, and other relevant details. Additionally,
+                fields for notes and terms allow for clear communication and additional information in the invoice.</p>
+            <br>
+
+            <h4>Discounts, Taxes, and Shipping Prices:</h4><br>
+            <p>This invoice generator offers a complete invoicing solution by supporting shipping costs, taxes, and
+                discounts. Both percentage and amount are supported.</p>
+            <br>
+
+            <h4>Local Save and Load Functionality:</h4><br>
+            <p>By enabling users to save and load their invoices locally, the solution improves accessibility and
+                gradually makes effective invoice administration easier.</p>
+            <br>
+
+            <h4>Multi-Currency Support:</h4><br>
+            <p>I included all world currencies to ensure that users from all over the world can utilize the tool. Now
+                it's a flexible and universally applicable billing solution.</p>
+            <br>
+        </div>
+    </div>
+    <div class="copyrightContainer">
+        <div class="copyrightText">
+            <h1>Invoice Generator</h1>
+            <h2> | © 2023 by Csaba Kissi</h2>
+        </div>
+        <div class="ulsocialMedia">
+            <li class="tw">
+                <a href="https://www.twitter.com/mr_bai007"></a>
+                <i class="fa-brands fa-twitter"></i>
+            </li>
+            <li class="git">
+                <a href="#"></a>
+                <i class="fa-brands fa-github"></i>
+            </li>
+            <li class="dribble">
+                <a href="#"></a>
+                <i class="fa-brands fa-dribbble"></i>
+            </li>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
